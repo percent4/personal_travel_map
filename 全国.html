@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/china.js"></script>
+
+</head>
+<body>
+    <div id="a438407081634ceab6af1c965034ae16" class="chart-container" style="width:1200px; height:800px;margin:auto;top:30px"></div>
+    <script>
+        var chart_a438407081634ceab6af1c965034ae16 = echarts.init(
+            document.getElementById('a438407081634ceab6af1c965034ae16'), 'white', {renderer: 'canvas'});
+        var option_a438407081634ceab6af1c965034ae16 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "map",
+            "name": "\u4e2a\u4eba\u8db3\u8ff9\u5730\u56fe",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "mapType": "china",
+            "data": [
+                {
+                    "name": "\u5317\u4eac",
+                    "value": 1
+                },
+                {
+                    "name": "\u4e0a\u6d77",
+                    "value": 1
+                },
+                {
+                    "name": "\u5929\u6d25",
+                    "value": 1
+                },
+                {
+                    "name": "\u6cb3\u5317",
+                    "value": 1
+                },
+                {
+                    "name": "\u5c71\u4e1c",
+                    "value": 1
+                },
+                {
+                    "name": "\u6c5f\u82cf",
+                    "value": 1
+                },
+                {
+                    "name": "\u6d59\u6c5f",
+                    "value": 1
+                },
+                {
+                    "name": "\u6c5f\u897f",
+                    "value": 1
+                },
+                {
+                    "name": "\u5b89\u5fbd",
+                    "value": 1
+                },
+                {
+                    "name": "\u6e56\u5317",
+                    "value": 1
+                },
+                {
+                    "name": "\u6e56\u5357",
+                    "value": 1
+                },
+                {
+                    "name": "\u6d77\u5357",
+                    "value": 1
+                },
+                {
+                    "name": "\u56db\u5ddd",
+                    "value": 1
+                },
+                {
+                    "name": "\u5e7f\u4e1c",
+                    "value": 1
+                }
+            ],
+            "roam": true,
+            "zoom": 1,
+            "showLegendSymbol": true,
+            "emphasis": {}
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u4e2a\u4eba\u8db3\u8ff9\u5730\u56fe"
+            ],
+            "selected": {
+                "\u4e2a\u4eba\u8db3\u8ff9\u5730\u56fe": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u4e2a\u4eba\u8db3\u8ff9\u5730\u56fe",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "piecewise",
+        "min": 0,
+        "max": 1,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
+        "borderWidth": 0,
+        "pieces": [
+            {
+                "max": 1,
+                "min": 1,
+                "label": "\u53bb\u8fc7",
+                "color": "#4EA397"
+            },
+            {
+                "max": 0,
+                "min": 0,
+                "label": "\u672a\u53bb\u8fc7",
+                "color": "#FFFFFF"
+            }
+        ]
+    }
+};
+        chart_a438407081634ceab6af1c965034ae16.setOption(option_a438407081634ceab6af1c965034ae16);
+        chart_a438407081634ceab6af1c965034ae16.on('click', function (param){
+            var selected = param.name;
+                if (selected) {
+                    switch(selected){
+                        case '北京':
+                            location.href = "provinces/北京.html";
+                            break;
+                        case '上海':
+                            location.href = "provinces/上海.html";
+                            break;
+                        case '天津':
+                            location.href = "provinces/天津.html";
+                            break;
+                        case '四川':
+                            location.href = "provinces/四川.html";
+                            break;
+                        case '安徽':
+                            location.href = "provinces/安徽.html";
+                            break;
+                        case '山东':
+                            location.href = "provinces/山东.html";
+                            break;
+                        case '江苏':
+                            location.href = "provinces/江苏.html";
+                            break;
+                        case '江西':
+                            location.href = "provinces/江西.html";
+                            break;
+                        case '河北':
+                            location.href = "provinces/河北.html";
+                            break;
+                        case '浙江':
+                            location.href = "provinces/浙江.html";
+                            break;
+                        case '海南':
+                            location.href = "provinces/海南.html";
+                            break;
+                        case '湖北':
+                            location.href = "provinces/湖北.html";
+                            break;
+                        case '湖南':
+                            location.href = "provinces/湖南.html";
+                            break;
+                        case '广东':
+                            location.href = "provinces/广东.html";
+                            break;
+                        default:
+                            break;
+                    }
+
+            }
+      });
+    </script>
+</body>
+</html>
