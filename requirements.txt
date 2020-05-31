@@ -1,0 +1,4 @@
+pyecharts==1.6.2
+PyYAML==5.3.1
+echarts-china-cities-pypkg==0.0.9
+echarts-china-provinces-pypkg==0.0.

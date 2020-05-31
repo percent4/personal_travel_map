@@ -7,7 +7,7 @@ import yaml
 from pyecharts.charts import Map
 from pyecharts import options as opts
 
-# 省和直辖市
+# 省和直辖市下面的市
 with open("travel_config.yml", 'r', encoding='utf-8') as ymlfile:
     province_city_dict = yaml.safe_load(ymlfile)
 
