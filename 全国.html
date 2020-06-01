@@ -8,11 +8,60 @@
 
 </head>
 <body>
-    <div id="a438407081634ceab6af1c965034ae16" class="chart-container" style="width:1200px; height:800px;margin:auto;top:30px"></div>
+    <div id="123" class="chart-container" style="width:1200px; height:800px;"></div>
     <script>
-        var chart_a438407081634ceab6af1c965034ae16 = echarts.init(
-            document.getElementById('a438407081634ceab6af1c965034ae16'), 'white', {renderer: 'canvas'});
-        var option_a438407081634ceab6af1c965034ae16 = {
+        var chart_123 = echarts.init(
+            document.getElementById('123'), 'white', {renderer: 'canvas'});
+            
+        chart_123.on('click', function (param){
+            var selected = param.name;
+                if (selected) {
+                    switch(selected){
+          						case "北京":
+							location.href = "provinces/北京.html";
+							break;
+						case "上海":
+							location.href = "provinces/上海.html";
+							break;
+						case "天津":
+							location.href = "provinces/天津.html";
+							break;
+						case "河北":
+							location.href = "provinces/河北.html";
+							break;
+						case "山东":
+							location.href = "provinces/山东.html";
+							break;
+						case "江苏":
+							location.href = "provinces/江苏.html";
+							break;
+						case "浙江":
+							location.href = "provinces/浙江.html";
+							break;
+						case "江西":
+							location.href = "provinces/江西.html";
+							break;
+						case "安徽":
+							location.href = "provinces/安徽.html";
+							break;
+						case "湖北":
+							location.href = "provinces/湖北.html";
+							break;
+						case "湖南":
+							location.href = "provinces/湖南.html";
+							break;
+						case "海南":
+							location.href = "provinces/海南.html";
+							break;
+						case "四川":
+							location.href = "provinces/四川.html";
+							break;
+						case "广东":
+							location.href = "provinces/广东.html";
+							break;
+						default:
+							break;}}});
+        var option_123 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -60,35 +109,35 @@
             "data": [
                 {
                     "name": "\u5317\u4eac",
-                    "value": 1
+                    "value": 8
                 },
                 {
                     "name": "\u4e0a\u6d77",
-                    "value": 1
+                    "value": 16
                 },
                 {
                     "name": "\u5929\u6d25",
-                    "value": 1
+                    "value": 4
                 },
                 {
                     "name": "\u6cb3\u5317",
-                    "value": 1
+                    "value": 2
                 },
                 {
                     "name": "\u5c71\u4e1c",
-                    "value": 1
+                    "value": 2
                 },
                 {
                     "name": "\u6c5f\u82cf",
-                    "value": 1
+                    "value": 5
                 },
                 {
                     "name": "\u6d59\u6c5f",
-                    "value": 1
+                    "value": 8
                 },
                 {
                     "name": "\u6c5f\u897f",
-                    "value": 1
+                    "value": 2
                 },
                 {
                     "name": "\u5b89\u5fbd",
@@ -104,7 +153,7 @@
                 },
                 {
                     "name": "\u6d77\u5357",
-                    "value": 1
+                    "value": 2
                 },
                 {
                     "name": "\u56db\u5ddd",
@@ -159,7 +208,7 @@
         "show": true,
         "type": "piecewise",
         "min": 0,
-        "max": 1,
+        "max": 20,
         "inRange": {
             "color": [
                 "#50a3ba",
@@ -174,76 +223,10 @@
         "showLabel": true,
         "itemWidth": 20,
         "itemHeight": 14,
-        "borderWidth": 0,
-        "pieces": [
-            {
-                "max": 1,
-                "min": 1,
-                "label": "\u53bb\u8fc7",
-                "color": "#4EA397"
-            },
-            {
-                "max": 0,
-                "min": 0,
-                "label": "\u672a\u53bb\u8fc7",
-                "color": "#FFFFFF"
-            }
-        ]
+        "borderWidth": 0
     }
 };
-        chart_a438407081634ceab6af1c965034ae16.setOption(option_a438407081634ceab6af1c965034ae16);
-        chart_a438407081634ceab6af1c965034ae16.on('click', function (param){
-            var selected = param.name;
-                if (selected) {
-                    switch(selected){
-                        case '北京':
-                            location.href = "provinces/北京.html";
-                            break;
-                        case '上海':
-                            location.href = "provinces/上海.html";
-                            break;
-                        case '天津':
-                            location.href = "provinces/天津.html";
-                            break;
-                        case '四川':
-                            location.href = "provinces/四川.html";
-                            break;
-                        case '安徽':
-                            location.href = "provinces/安徽.html";
-                            break;
-                        case '山东':
-                            location.href = "provinces/山东.html";
-                            break;
-                        case '江苏':
-                            location.href = "provinces/江苏.html";
-                            break;
-                        case '江西':
-                            location.href = "provinces/江西.html";
-                            break;
-                        case '河北':
-                            location.href = "provinces/河北.html";
-                            break;
-                        case '浙江':
-                            location.href = "provinces/浙江.html";
-                            break;
-                        case '海南':
-                            location.href = "provinces/海南.html";
-                            break;
-                        case '湖北':
-                            location.href = "provinces/湖北.html";
-                            break;
-                        case '湖南':
-                            location.href = "provinces/湖南.html";
-                            break;
-                        case '广东':
-                            location.href = "provinces/广东.html";
-                            break;
-                        default:
-                            break;
-                    }
-
-            }
-      });
+        chart_123.setOption(option_123);
     </script>
 </body>
 </html>
