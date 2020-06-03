@@ -94,6 +94,8 @@ class ProvinceHandler(tornado.web.RequestHandler):
 
 
 def main():
+    if not os.path.exists("./templates/provinces"):
+        os.system("mkdir -p ./templates/provinces")
     tornado.options.parse_command_line()
     app = tornado.web.Application(
             handlers=[(r'/index', IndexHandler),
