@@ -1,6 +1,6 @@
 网页的首页如下：
 
-
+！[](https://raw.githubusercontent.com/percent4/personal_travel_map/dev_20200603/%E7%BD%91%E9%A1%B5%E9%A6%96%E9%A1%B5.png)
 
 个人足迹地图，精确到市级别，效果图如下：
 
